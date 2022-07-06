@@ -1,0 +1,62 @@
+/* Navbar */
+.navbar-brand{
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.nav-link{
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+/* jumboton */
+.jumbotron{
+    background-image: url(image/pexels-cottonbro-4691567.jpg);
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+}
+
+.display-4{
+    color: #FBF7F0;
+    padding-top: 100px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+    margin-bottom: 30px;
+}
+
+/* DESKTOP */
+@media (min-width: 992px) {
+    
+    .navbar-brand, .nav-link{
+        color: #FBF7F0;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+    
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid #CDC9C3;
+        width: 70%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .jumbotron{
+        margin-top: -90px;
+        height: 650px;
+        
+    }
+
+    .display-4{
+        padding-top: 240px;
+        font-size: 70px;
+    }
+}
+
